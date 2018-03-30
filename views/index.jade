@@ -3,7 +3,6 @@ extends layout
 block content
   each book in books
     div 
-      div
-        img(src="https://librarystorage.blob.core.windows.net/bookcovers/"+ book.bookId + ".jpg")
+    
       h3= book.title
       h4= book.author
