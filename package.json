@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "node ./bin/www"
+    "start": "nodemon ./bin/www"
   },
   "dependencies": {
     "cookie-parser": "~1.4.3",
@@ -11,6 +11,16 @@
     "express": "~4.16.0",
     "http-errors": "~1.6.2",
     "jade": "~1.11.0",
-    "morgan": "~1.9.0"
+    "morgan": "~1.9.0",
+    "mongodb": "^3.0.3"
+  },
+  "nodemonConfig": {
+    "env": {
+      "URL": "mongodb://ms-cosmos-db.documents.azure.com:10255/?ssl=true&replicaSet=globaldb",
+      "PASS1": "KlqubcFnxULFg50OoBx7dQgEODmpKx2EfSP1zCvEZ90DsD0vROGrXmboaWHNYpR6RWvqOYMZZgZWHLA6TOCWyQ==",
+      "PASS": "8tgNp3Y8Sfu01lYlQEMXwtExA6PIV4lGaiXCmcIUJqfsCPhEvTHbqmN4udc0ymiUdY4JTCRAVLo0HpsHysWzXQ==",
+      "USER": "ms-cosmos-db",
+      "CONNECT" : "mongodb://ms-cosmos-db:KlqubcFnxULFg50OoBx7dQgEODmpKx2EfSP1zCvEZ90DsD0vROGrXmboaWHNYpR6RWvqOYMZZgZWHLA6TOCWyQ==@ms-cosmos-db.documents.azure.com:10255/?ssl=true&replicaSet=globaldb"
+    }
   }
 }
